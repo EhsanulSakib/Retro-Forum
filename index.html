@@ -9,12 +9,9 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>ReTro</title>
   </head>
@@ -137,10 +134,10 @@
       
       <!-- banner -->
       <div class="banner rounded-3xl flex flex-col md:flex-row gap-4 lg:gap-0 mt-1 lg:mt-10 py-10 md:py-20 px-2 lg:px-4">
-        <div class="left w-full flex flex-col gap-4 text-[--white]">
-          <div class="title flex flex-col gap-1 lg:gap-8">
-          <h2 class="font-extrabold text-4xl lg:text-[64px]">Welcome to the</h2>
-          <h2 class="font-extrabold text-4xl lg:text-[64px]"><span class="text-gradient">ReTro</span> Forum</h2>
+        <div class="left ml-0 md:ml-4 w-full flex flex-col gap-4 text-[--white]">
+          <div class="title flex flex-col gap-1 lg:gap-4">
+          <h2 class="font-extrabold text-4xl lg:text-5xl xl:text-6xl">Welcome to the</h2>
+          <h2 class="font-extrabold text-4xl lg:text-5xl xl:text-6xl"><span class="text-gradient">ReTro</span> Forum</h2>
           </div>
           <p class="text-xs md:text-sm lg:text-lg">Share your favorite opinion and win and wp forum coffee mug!</p>
           <div class="search-bar rounded-lg w-9/12 bg-[--white] flex justify-between">
@@ -176,6 +173,221 @@
         </div>
       </div>
     </header>
+
+    <!-- main -->
+    <main class="w-11/12 m-auto">
+      <!-- title -->
+      <div class="title flex flex-col gap-3 lg:gap-6 text-center w-5/6 md:w-2/3 m-auto my-4 lg:my-16">
+        <h2 class="font-extrabold text-2xl lg:text-[40px]">Let’s Discuss</h2>
+        <p class="text-xs lg:text-lg xl:text-xl">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+      </div>
+
+      <!-- post -->
+      <section class="post flex flex-col md:flex-row justify-between gap-3">
+        <!-- card container-->
+        <div class="card-container">
+          <!-- card-1 -->
+          <!-- have to work using api -->
+          <div class="single-card py-6 rounded-lg w-full bg-[#F3F3F5] flex justify-between font-inter">
+            <!-- profile-pic -->
+            <div class="pl-1 md:pl-4 pro-pic relative rounded-md">
+              <img class="w-24 md:w-12 h-12" src="./images/demo.jpeg" alt="">
+              <div class="online absolute -right-1 -top-1 bg-green-400 rounded-full h-2 w-2" id="active-status"></div>
+            </div>
+            
+            <!-- post-info -->
+            <div class="mx-4 pb-4 post-info flex flex-col gap-1">
+              <!-- hashtag -->
+              <div class="hashtag flex gap-4 text-xs xl:text-base font-semibold">
+                <p>#<span>Music</span></p>
+                <p>Author:<span>Awlad Hossain</span></p>
+              </div>
+              <!-- title -->
+              <h2 class="font-extrabold font-mulish xl:text-2xl">10 Kids Unaware of Their Halloween Costume</h2>
+              <!-- blog -->
+              <p class="text-xs mb-2 xl:text-lg">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+
+              <!-- like-comment -->
+              <div class="flex justify-between border-t border-dashed border-[#12132D40] pt-2">                
+                <div class="like-cmnt flex gap-4">
+                  <div class="comment flex items-center gap-1 text-[rgba(18,19,45,0.6)]">
+                    <img class="h-4" src="./images/comment.png" alt="">
+                    <p class="text-sm">560</p>
+                  </div>
+  
+                  <div class="comment flex items-center gap-1 text-[rgba(18,19,45,0.6)]">
+                    <img class="h-4" src="./images/view.png" alt="">
+                    <p class="text-sm">1560</p>
+                  </div>
+  
+                  <div class="comment flex items-center gap-1 text-[rgba(18,19,45,0.6)]">
+                    <img class="h-4" src="./images/timer.png" alt="">
+                    <p class="text-sm">5min</p>
+                  </div>
+                </div>
+
+                <!-- mark-btn -->
+                <button class="cursor-pointer"><img class="h-5 " src="./images/add-box.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        
+
+        <!-- mark-as-read-container -->
+        <div class="rounded-lg mark p-2 lg:p-4 text-xs lg:text-base w-full md:w-1/3 bg-[#12132D0D] font-semibold">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold">Title</h4>
+            <div class="flex gap-1 items-center justify-center font-light">
+              <img class="h-4" src="./images/tick.png" alt="">
+              <h5>Mark as read (<span id="read-count">0</span>)</h5>
+            </div>
+          </div>
+
+          <!-- have to work using api -->
+
+          <ul>
+            <!-- use it on js -->
+            <li class="my-2">
+              <div class="bg-[#FFFFFF] rounded-md p-2 lg:p-4 flex justify-between">
+                <h4 class="w-3/4" id="mark-title">10 title</h4>
+                <div class="view flex gap-[1px] text-base text-[#12132D99] items-center">
+                  <img class="h-5" src="./images/view.png" alt="">
+                  <h4 class="w-1/4 text-xs">111</h4>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- forum -->
+      <section class="forum rounded-3xl flex flex-col md:flex-row gap-4 lg:gap-0 justify-between my-4 md:my-12 lg:my-24 py-10 md:py-20 px-2 md:px-4 lg:px-12">
+          <div class="left w-full md:w-1/2 flex flex-col justify-center gap-4 text-[--white]">
+            <h2 class="font-extrabold text-lg md:text-3xl xl:text-4xl">Join Our Forum</h2>
+            <p class="text-xs md:text-xs lg:text-base xl:text-lg">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+            <button
+            class="rounded-lg py-2 w-full md:w-1/2 lg:w-1/3 bg-[#797DFC] items-center justify-center"
+          >
+            <h2 class="text-sm md:text-base xl:text-lg font-bold text-[--white] ">
+              Registered Now
+            </h2>
+          </button>
+          </div>
+          <div class="right flex justify-center md:justify-end items-center w-1/3 m-auto">
+            <img src="./images/joinforum.png" alt="">
+          </div>
+      </section>
+
+      <!-- latest post -->
+      <section class="latest-post">
+        <!-- title -->
+        <div class="title flex flex-col gap-3 lg:gap-6 text-center w-5/6 md:w-2/3 m-auto my-4 lg:my-16">
+          <h2 class="font-extrabold text-2xl lg:text-[40px]">Latest Posts</h2>
+          <p class="text-xs lg:text-lg xl:text-xl">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+
+        <!-- latest-post-section -->
+        <div class="latest-post-card grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- card-1 -->
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Post" class="rounded-lg" />
+            </figure>
+            <div class="card-body items-left gap-1 lg:gap-2 text-left">
+              <!-- date -->
+              <div class="date flex items-center gap-1 text-sm lg:text-lg text-[#12132D99] ">
+                <img class="h-5" src="./images/calender.png" alt="">
+                <p>18 Jan 2024</p>
+              </div>
+              <h2 class="card-title text-[--dark-01] text-base lg:text-xl xl:text-2xl font-bold">What will a mars habitat force that impact in our daily life!!!</h2>
+              <p class="text-xs lg:text-base xl:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+              
+              <div class="mt-4 author flex gap-4 ">
+                <img class="h-12 w-12 rounded-full" src="./images/demo.jpeg" alt="">
+
+                <div class="name text-[--dark-01]">
+                  <h3 class="font-bold xl:text-xl">Cameron Williamson</h3>
+                  <p class="text-sm text-[#12132D99] xl:text-lg">Unknown</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Post" class="rounded-lg" />
+            </figure>
+            <div class="card-body items-left gap-1 lg:gap-2 text-left">
+              <!-- date -->
+              <div class="date flex items-center gap-1 text-sm lg:text-lg text-[#12132D99] ">
+                <img class="h-5" src="./images/calender.png" alt="">
+                <p>18 Jan 2024</p>
+              </div>
+              <h2 class="card-title text-[--dark-01] text-base lg:text-xl xl:text-2xl font-bold">What will a mars habitat force that impact in our daily life!!!</h2>
+              <p class="text-xs lg:text-base xl:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+              
+              <div class="mt-4 author flex gap-4 ">
+                <img class="h-12 w-12 rounded-full" src="./images/demo.jpeg" alt="">
+
+                <div class="name text-[--dark-01]">
+                  <h3 class="font-bold xl:text-xl">Cameron Williamson</h3>
+                  <p class="text-sm text-[#12132D99] xl:text-lg">Unknown</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Post" class="rounded-lg" />
+            </figure>
+            <div class="card-body items-left gap-1 lg:gap-2 text-left">
+              <!-- date -->
+              <div class="date flex items-center gap-1 text-sm lg:text-lg text-[#12132D99] ">
+                <img class="h-5" src="./images/calender.png" alt="">
+                <p>18 Jan 2024</p>
+              </div>
+              <h2 class="card-title text-[--dark-01] text-base lg:text-xl xl:text-2xl font-bold">What will a mars habitat force that impact in our daily life!!!</h2>
+              <p class="text-xs lg:text-base xl:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+              
+              <div class="author flex gap-4 ">
+                <img class="h-12 w-12 rounded-full" src="./images/demo.jpeg" alt="">
+
+                <div class="name text-[--dark-01]">
+                  <h3 class="font-bold xl:text-xl">Cameron Williamson</h3>
+                  <p class="text-sm text-[#12132D99] xl:text-lg">Unknown</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-4 md:mt-12 lg:mt-24 bg-gradient-to-r from-[rgba(18,19,45,0.05)] to-[rgba(18,19,45,0)] py-4 md:py-12 lg:py-24 ">
+      <div class="container text-sm lg:text-base xl:text-xl w-full md:w-2/3 text-center m-auto flex flex-col gap-1 md:gap-2 justify-center">
+        <div class="logo m-auto flex flex-col ">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+        <p class="footer-paragraph">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC
+        </p>
+        <div class="my-2 lg:my-4 pb-2 lg:pb-4 border-b border-[#30325E1A] flex gap-4 items-center justify-center">
+          <img src="./images/twitter.png" alt="">
+          <img src="./images/fb.png" alt="">
+          <img class="h-6" src="./images/instagram.png" alt="">
+          <img src="./images/github.png" alt="">
+        </div>
+        <h5 class="copywrite">2017, All Rights Reserved.</h5>
+      </div>
+    </footer>
+
+
 
     <!-- script -->
     <script src="index.js"></script>
