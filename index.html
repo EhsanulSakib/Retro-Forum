@@ -19,7 +19,7 @@
     <header class="w-11/12 m-auto">
       <!-- navbar -->
       <div
-        class="navbar p-0 w-full 2xl:w-4/5 m-auto bg-base-100 flex justify-between mt-1 lg:mt-6"
+        class="navbar p-0 w-full m-auto bg-base-100 flex justify-between mt-1 lg:mt-6"
       >
         <div class="navbar-start md:hidden w-auto">
           <div class="dropdown">
@@ -134,6 +134,7 @@
       
       <!-- banner -->
       <div class="banner rounded-3xl flex flex-col md:flex-row gap-4 lg:gap-0 mt-1 lg:mt-10 py-10 md:py-20 px-2 lg:px-4">
+        
         <div class="left ml-0 md:ml-4 w-full flex flex-col gap-4 text-[--white]">
           <div class="title flex flex-col gap-1 lg:gap-4">
           <h2 class="font-extrabold text-4xl lg:text-5xl xl:text-6xl">Welcome to the</h2>
@@ -144,6 +145,7 @@
             <input class="rounded-lg pl-1 lg:pl-4 text-[--dark-01]" type="text" name="search" id="search" placeholder="Search here anything">
             <button
             class="rounded-lg py-2 px-4 bg-[#797DFC] items-center justify-center"
+            onclick="searchPost()"
           >
             <h2 class="text-base font-bold text-[--white] ">
               Search
@@ -151,6 +153,8 @@
           </button>
           </div>
         </div>
+
+
         <div class="right flex justify-center items-center w-full">
           <div class="container flex flex-col gap-4 w-full md:w-2/3 rounded-lg p-4 bg-[white]">
             <div class="flex justify-between">
@@ -262,6 +266,7 @@
 
     <!-- script -->
     <script src="./script/post.js"></script>
+    <script src="./script/search.js"></script>
     <script src="./script/latest-post.js"></script>
     <script src="./script/history.js"></script>
   </body>

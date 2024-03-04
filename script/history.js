@@ -13,4 +13,13 @@ const addHistory = (title, viewCount) => {
   </div>
     `;
   historyDiv.append(newHistory);
+  increaseReadCount();
 };
+
+const increaseReadCount = () =>{
+  const currentCount = document.getElementById("read-count");
+  let count = parseInt(currentCount.innerText);
+
+  count+=1;
+  currentCount.innerText = count;
+}
