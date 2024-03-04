@@ -11,8 +11,6 @@ const displayLatestPost = (latestPosts) => {
   const latestPostContainer = document.getElementById("latest-post-container");
 
   latestPosts.forEach((latestPost) => {
-    console.log(latestPost);
-
     const latestPostCard = document.createElement("div");
     latestPostCard.classList = "card w-full bg-base-100 shadow-xl";
     latestPostCard.innerHTML = `

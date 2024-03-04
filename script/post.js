@@ -11,8 +11,6 @@ const displayPost = (posts) => {
   const postContainer = document.getElementById("post-container");
 
   posts.forEach((post) => {
-    console.log(post);
-
     const postCard = document.createElement("div");
     postCard.classList =
       "single-card py-6 rounded-lg w-full bg-[#F3F3F5] flex justify-between font-inter";
@@ -57,7 +55,10 @@ const displayPost = (posts) => {
         </div>
 
         <!-- mark-btn -->
-        <button class="cursor-pointer"><img class="h-5 " src="./images/add-box.png" alt=""></button>
+        <button class="cursor-pointer" onclick="addHistory('${post['title'].replace(
+          /'/g,"\\'")}',${post["view_count"]})">
+        <img class="h-5 " src="./images/add-box.png" alt="">
+        </button>
       </div>
     </div>
     `;
